@@ -1,15 +1,17 @@
 # Data Science Bootcamp Project
-Data Science Project for DataRockie Bootcamp
+This folder contains all the projects initiated for DataRockie Data Science Bootcamp
 
-## Personal Projects
-1. SQL Customer Data Analysis
-2. SQL Churn Analysis
-3. R Programming
-4. Looker GA4 Dashboard
-5. Linear Regression Model with Caret
+## Project List
+1. Dashboards
+2. Data_Transformation_in_R
+3. Data_Visualization_R
+4. Google_Sheets_Project
+5. R_Programming
+6. SQL_Projects
+7. WordPress
 
 ## Contact Me
-Reach out to me at p.vetvitayavatana@gmail.com for questions or ideas
+In case there are questions, please contact me at p.vetvitayavatana@gmail.com
 
-## Thailand Best Hidden Gem Message
-![Thailand Best Hidden Gem](https://www.capekuduhotel.com/blog/wp-content/uploads/2023/11/islands-hopping-in-thailand-1-1024x576.jpg)
+## Data Science is the future!
+![Reference: Data Flair https://data-flair.training/blogs/future-of-data-science/]([https://www.capekuduhotel.com/blog/wp-content/uploads/2023/11/islands-hopping-in-thailand-1-1024x576.jpg](https://data-flair.training/blogs/wp-content/uploads/sites/2/2017/12/Data-Science-future.jpg))
