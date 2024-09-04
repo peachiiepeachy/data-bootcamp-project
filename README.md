@@ -14,4 +14,4 @@ This folder contains all the projects initiated for DataRockie Data Science Boot
 In case there are questions, please contact me at p.vetvitayavatana@gmail.com
 
 ## Data Science is the future!
-![Reference: Data Flair](https://www.capekuduhotel.com/blog/wp-content/uploads/2023/11/islands-hopping-in-thailand-1-1024x576.jpg](https://data-flair.training/blogs/wp-content/uploads/sites/2/2017/12/Data-Science-future.jpg)
+![Reference: Data Flair](https://data-flair.training/blogs/wp-content/uploads/sites/2/2017/12/Data-Science-future.jpg)
