@@ -1,0 +1,26 @@
+<cafe>
+  <menu>
+    <name>Matcha Latte</name>
+    <price>60</price>
+    <sweetness_level>2</sweetness_level>
+    <original_country>Japan</original_country>
+  </menu>
+  <menu>
+    <name>Thai Iced Tea</name>
+    <price>50</price>
+    <sweetness_level>3</sweetness_level>
+    <original_country>Thailand</original_country>
+  </menu> 
+  <menu>
+    <name>Espresso</name>
+    <price>40</price>
+    <sweetness_level>1</sweetness_level>
+    <original_country>Italy</original_country>
+  </menu>
+  <menu>
+    <name>Lychee Italian Soda</name>
+    <price>45</price>
+    <sweetness_level>4</sweetness_level>
+    <original_country>Thailand</original_country>
+  </menu>
+</cafe>
