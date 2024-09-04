@@ -1,0 +1,63 @@
+## data ##
+
+menu <- c("Magherita","Hawaiian","Meat Lovers","Vegetarian","Four Cheese")
+price <- c(200,220,280,230,260)
+cooking_time <- c(20,25,35,30,25)
+pizza <- data.frame(menu,price,cooking_time)
+
+operating_hour <- "Mon-Fri: 12.00-20.00 | Sat-Sun: 11.00-23.00"
+contact <- "Tel: 02-222-2222 | Email: pizzalover@gmail.com"
+
+
+## pizza chatbot code ##
+
+chatbot <- function() {
+  first_reply <- readline("Welcome to Pizza Lover! How may I help you today?")
+
+  if (grepl("menu|order",first_reply,ignore.case = TRUE)) {
+    print(pizza)
+    pizza_order <- readline("Which pizza do you want?")
+  } else if (grepl("time|open",first_reply,ignore.case=TRUE)) {
+    print(operating_hour)
+  } else {
+    print(paste("For other information, please contact",contact))}
+  while (!(pizza_order%in%menu)) {
+    pizza_order <- readline("Can you type the pizza name correctly?")
+  }
+  if (pizza_order %in% menu)  {
+    amount <- readline("How many pizza?")
+  } else {pizza_order <- readline("Can you type the pizza name correctly?")
+  }
+  no_pizza <- as.numeric(amount)
+  checkout <- readline("Do you want to order more?")
+  if (grepl("yes",checkout,ignore.case = TRUE)) {
+    pizza_order_2 <- readline("Which item do you want to order additionally?")
+  } else {print(paste("Total price will be",pizza[menu==pizza_order,2]*no_pizza,"baht","We will deliver the pizza to you in 30 minutes. Please prepare cash to pay directly with our delivery man. Thank you for buying pizza from us. Have a great day!"))}
+
+  # second order#
+
+  while (!(pizza_order_2%in%menu)) {
+    pizza_order_2 <- readline("Can you type the pizza name correctly?")
+  }
+  if (pizza_order_2 %in% menu) {
+    amount_2 <- readline("How many pizza?")
+  } else {pizza_order_2 <- readline("Can you type the pizza name correctly?")
+  }
+  no_pizza_2 <- as.numeric(amount_2)
+  checkout <- readline("Do you want to order more?")
+  if (grepl("yes",checkout,ignore.case = TRUE)) {
+    pizza_order_3 <- readline("Which item do you want to order additionally?")
+  } else {print(paste("Total price will be",(pizza[menu==pizza_order,2]*no_pizza)+(pizza[menu==pizza_order_2,2]*no_pizza_2),"baht","We will deliver the pizza to you in 30 minutes. Please prepare cash to pay directly with our delivery man. Thank you for buying pizza from us. Have a great day!"))}
+
+  # third order#
+
+  while (!(pizza_order_3%in%menu)) {
+    pizza_order_3 <- readline("Can you type the pizza name correctly?")
+  }
+  if (pizza_order_3 %in% menu) {
+    amount_3 <- readline("How many pizza?")
+  } else {pizza_order_3 <- readline("Can you type the pizza name correctly?")
+  }
+  no_pizza_3 <- as.numeric(amount_3)
+  checkout <- print(paste("Total price will be",(pizza[menu==pizza_order,2]*no_pizza)+(pizza[menu==pizza_order_2,2]*no_pizza_2)+(pizza[menu==pizza_order_3,2]*no_pizza_3),"baht","If you want to order more, please create another order separately. We will deliver the pizza to you in 30 minutes. Please prepare cash to pay directly with our delivery man. Thank you for buying pizza from us. Have a great day!"))
+}
